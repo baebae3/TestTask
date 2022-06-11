@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+.ticket {
+  margin-bottom: 20px;
+  width: 1000px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.show_more {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.show_more button {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ticket__header {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  background-color: #0087c9;
+}
+
+.ticket__header p {
+  color: white;
+  padding-right: 5px;
+  margin: 0;
+}
+
+.ticket__header p:first-child {
+  font-size: 24px;
+}
+
+.ticket__header p:last-child {
+  font-size: 12px;
+}
+
+.travel {
+  display: flex;
+}
+
+.travel p {
+  margin-left: 20px;
+  padding-left: 5px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.separator {
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.separator hr {
+  right: 100px;
+  top: -20px;
+  z-index: 1;
+  width: 90%;
+}
+
+.separator p {
+  position: absolute;
+  right: 40%;
+  top: -35px;
+  font-size: 18px;
+  color: #ff9c19;
+  background: #fff;
+  z-index: 10;
+  padding: 2px 20px;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time_departure {
+  display: flex;
   align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 20px;
+  padding-left: 5px;
+}
+
+.time_departure p {
+  padding-right: 10px;
+}
+
+.time_arrival {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 20px;
+  padding-left: 5px;
+}
+
+.time_arrival p {
+  padding-right: 10px;
+}
+.ticket_separator {
+  width: 100%;
+  height: 4px;
+  background-color: #0087c9;
+}
+
+.select {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #ffb168;
+}
+
+.select p {
+  font-size: 28px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sort {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  margin-right: 20px;
+  width: 30%;
+  height: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sort p {
+  font-weight: 800;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.change_price input {
+  width: 30%;
 }
